@@ -6,8 +6,6 @@ import re                            #re - Uses regex to find phone numbers, ema
 from difflib import SequenceMatcher  #from difflib - This loads the Python module that contains tools for finding differences between texts,  
                                      #import SequenceMatcher - This imports the specific class that checks how similar two strings or sentences are.
 
-
-
 #1. URL LIST
 
 URLS = [
@@ -16,8 +14,6 @@ URLS = [
     "https://www.kryzo.tech/contact",
     "https://www.kryzo.tech/blogs"
 ]
-
-
 
 #2. CLEAN TEXT FILTER
 
@@ -34,7 +30,6 @@ def clean_text(paragraphs):
         cleaned.append(p)
 
     return cleaned
-
 
 
 #3. SCRAPER FUNCTION
@@ -223,4 +218,5 @@ while True:
 
     ans = find_answer(user, scraped_data)
     print("Bot:", ans)
+
 
