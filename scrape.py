@@ -1,9 +1,10 @@
-import requests
-from bs4 import BeautifulSoup
-import time
-import json
-import re
-from difflib import SequenceMatcher
+import requests                      #requests - Fetches data from websites (makes HTTP requests)
+from bs4 import BeautifulSoup        #bs4 - This imports the BeautifulSoup tool so you we extract text and elements from an HTML webpage
+import time                          #time - Adds delays between operations
+import json                          #json - Saves and loads data in JSON file format
+import re                            #re - Uses regex to find phone numbers, emails, and patterns
+from difflib import SequenceMatcher  #from difflib - This loads the Python module that contains tools for finding differences between texts,  
+                                     #import SequenceMatcher - This imports the specific class that checks how similar two strings or sentences are.
 
 
 
@@ -222,3 +223,4 @@ while True:
 
     ans = find_answer(user, scraped_data)
     print("Bot:", ans)
+
